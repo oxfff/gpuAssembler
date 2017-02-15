@@ -1,0 +1,12 @@
+Streaming Multiprocessor "Pascal"
+
+A "Streaming Multiprocessor" corresponds to AMD's Compute Unit. An SMP encompasses 128 single-precision ALUs ("CUDA cores") on GP104 chips and 64 single-precision ALUs on GP100 chips.
+
+What AMD calls a CU (compute unit) can be compared to what Nvidia calls an SM (streaming multiprocessor). While all CU versions consist of 64 shader processors (i.e. 4 SIMD Vector Units (each 16-lane wide)= 64), Nvidia (regularly calling shader processors "CUDA cores") experimented with very different numbers:
+
+    One Tesla SM combines 8 single-precision (FP32) shader processors
+    One Fermi SM combines 32 single-precision (FP32) shader processors
+    One Kepler SM combines 192 single-precision (FP32) shader processors and also 64 double-precision units (at least the GK110 GPUs)
+    One Maxwell SM combines 128 single-precision (FP32) shader processors
+    One Pascal SM on the GP100 combines 64 single-precision (FP32) shader processors and also 32 double-precision (FP64) (at least the GP100 GPUs) providing a 2:1 ratio of single- to double-precision throughput. On the GP104 an SM combines 128 single-precision ALUs, 4 double-precision ALUs providing a 32:1 ratio, and one half-precision ALU that contains a vector of two half-precision floats which can execute the same instruction on both floats providing a 64:1 ratio if the same instruction is used on both elements. GP100 however uses more flexible FP32 cores that are able to process one single-precision or two half-precision numbers in a two-element vector. [14] Nvidia intends to address the calculation of algorithms related to deep learning with those.
+

@@ -1,0 +1,9 @@
+[submodule "asfermi"]
+	path = asfermi
+	url = https://github.com/hyqneuron/asfermi.git
+[submodule "KeplerAs"]
+	path = KeplerAs
+	url = https://github.com/xiuxiazhang/KeplerAs.git
+[submodule "maxas"]
+	path = maxas
+	url = https://github.com/NervanaSystems/maxas.git
